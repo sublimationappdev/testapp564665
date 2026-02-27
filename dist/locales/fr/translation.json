@@ -1,0 +1,35 @@
+{
+  "common": {
+    "appTitle": "Mon Application",
+    "language": "Langue",
+    "logout": "Déconnexion"
+  },
+  "topbar": {
+    "greeting": "Bonjour, {{name}}"
+  },
+  "auth": {
+    "login": "Connexion",
+    "register": "Inscription"
+  },
+  "crop": {
+    "square": "Carré",
+    "rectangle": "Rectangle",
+    "circle": "Cercle",
+    "ellipse": "Ellipse",
+    "round_corners": "Coins arrondis",
+    "cone": "Cône",
+    "path": "Forme personnalisée"
+  },
+  "drawer": {
+    "default_units": "Unités",
+    "language": "Langue",
+    "credits": "Crédits",
+    "documentation": "Guide d'utilisation",
+    "anouncements": "Annonces",
+    "press_releases": "Communiqués de presse",
+    "careers": "Carrières",
+    "support": "Support",
+    "contact_us": "Nous contacter",
+    "close": "Fermer"
+  }
+}

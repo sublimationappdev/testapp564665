@@ -1,0 +1,35 @@
+{
+  "common": {
+    "appTitle": "マイアプリ",
+    "language": "言語",
+    "logout": "ログアウト"
+  },
+  "topbar": {
+    "greeting": "こんにちは、{{name}}さん"
+  },
+  "auth": {
+    "login": "ログイン",
+    "register": "登録"
+  },
+  "crop": {
+    "square": "正方形",
+    "rectangle": "長方形",
+    "circle": "円形",
+    "ellipse": "楕円形",
+    "round_corners": "角丸",
+    "cone": "円錐",
+    "path": "カスタム形状"
+  },
+  "drawer": {
+    "default_units": "単位",
+    "language": "言語",
+    "credits": "クレジット",
+    "documentation": "使用ガイド",
+    "anouncements": "お知らせ",
+    "press_releases": "プレスリリース",
+    "careers": "採用情報",
+    "support": "サポート",
+    "contact_us": "お問い合わせ",
+    "close": "閉じる"
+  }
+}

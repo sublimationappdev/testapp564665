@@ -1,0 +1,12 @@
+{
+  "apiServerUrl": "https://api.example.com",
+  "rootDomain": "https://example.com",
+  "name": "TestApp564665",
+  "languages": [
+    "ar",
+    "fr",
+    "he"
+  ],
+  "defaultLang": "ar",
+  "authEnabled": false
+}

@@ -1,0 +1,8 @@
+{
+  "realm": "demo",
+  "auth-server-url": "https://auth.172.20.5.5.nip.io",
+  "ssl-required": "external",
+  "resource": "react-client",
+  "public-client": true,
+  "confidential-port": 0
+} 

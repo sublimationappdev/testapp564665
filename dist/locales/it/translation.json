@@ -1,0 +1,35 @@
+{
+  "common": {
+    "appTitle": "La Mia App",
+    "language": "Lingua",
+    "logout": "Esci"
+  },
+  "topbar": {
+    "greeting": "Ciao, {{name}}"
+  },
+  "auth": {
+    "login": "Accedi",
+    "register": "Registrati"
+  },
+  "crop": {
+    "square": "Quadrato",
+    "rectangle": "Rettangolo",
+    "circle": "Cerchio",
+    "ellipse": "Ellisse",
+    "round_corners": "Angoli arrotondati",
+    "cone": "Cono",
+    "path": "Forma personalizzata"
+  },
+  "drawer": {
+    "default_units": "Unità",
+    "language": "Lingua",
+    "credits": "Credit",
+    "documentation": "Guida all'uso",
+    "anouncements": "Annunci",
+    "press_releases": "Comunicati stampa",
+    "careers": "Carriere",
+    "support": "Supporto",
+    "contact_us": "Contattaci",
+    "close": "Chiudi"
+  }
+}

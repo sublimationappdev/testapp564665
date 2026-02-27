@@ -1,0 +1,35 @@
+{
+  "common": {
+    "appTitle": "Моє Додаток",
+    "language": "Мова",
+    "logout": "Вийти"
+  },
+  "topbar": {
+    "greeting": "Привіт, {{name}}"
+  },
+  "auth": {
+    "login": "Увійти",
+    "register": "Зареєструватися"
+  },
+  "crop": {
+    "square": "Квадрат",
+    "rectangle": "Прямокутник",
+    "circle": "Коло",
+    "ellipse": "Еліпс",
+    "round_corners": "Закруглені кути",
+    "cone": "Конус",
+    "path": "Користувацька форма"
+  },
+  "drawer": {
+    "default_units": "Одиниці",
+    "language": "Мова",
+    "credits": "Подяка",
+    "documentation": "Інструкція з використання",
+    "anouncements": "Оголошення",
+    "press_releases": "Прес-релізи",
+    "careers": "Карьєра",
+    "support": "Підтримка",
+    "contact_us": "Зв'яжіться з нами",
+    "close": "Закрити"
+  }
+}

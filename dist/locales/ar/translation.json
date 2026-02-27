@@ -1,0 +1,35 @@
+{
+  "common": {
+    "appTitle": "تطبيقي",
+    "language": "اللغة",
+    "logout": "تسجيل الخروج"
+  },
+  "topbar": {
+    "greeting": "مرحباً، {{name}}"
+  },
+  "auth": {
+    "login": "الدخول",
+    "register": "التسجيل"
+  },
+  "crop": {
+    "square": "مربع",
+    "rectangle": "مستطيل",
+    "circle": "دائرة",
+    "ellipse": "بيضاوي",
+    "round_corners": "زوايا مدورة",
+    "cone": "مخروط",
+    "path": "شكل مخصص"
+  },
+  "drawer": {
+    "default_units": "وحدات",
+    "language": "اللغة",
+    "credits": "الاعتمادات",
+    "documentation": "دليل الاستخدام",
+    "anouncements": "الإعلانات",
+    "press_releases": "بيانات صحفية",
+    "careers": "الوظائف",
+    "support": "الدعم",
+    "contact_us": "تواصل معنا",
+    "close": "إغلاق"
+  }
+}

@@ -1,0 +1,13 @@
+node_modules/
+docs/
+dist/catalogs
+dist/democatalogs
+dist/staticwebapp.config.json
+
+
+dist/models/17ozconemug.glb
+ci/unzip.js
+deploy-cc.sh
+run.sh
+update.sh
+reset.sh

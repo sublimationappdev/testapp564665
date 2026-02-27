@@ -1,0 +1,35 @@
+{
+  "common": {
+    "appTitle": "Mi Aplicación",
+    "language": "Idioma",
+    "logout": "Cerrar sesión"
+  },
+  "topbar": {
+    "greeting": "Hola, {{name}}"
+  },
+  "auth": {
+    "login": "Iniciar sesión",
+    "register": "Registrarse"
+  },
+  "crop": {
+    "square": "Cuadrado",
+    "rectangle": "Rectángulo",
+    "circle": "Círculo",
+    "ellipse": "Elipse",
+    "round_corners": "Esquinas redondeadas",
+    "cone": "Cono",
+    "path": "Forma personalizada"
+  },
+  "drawer": {
+    "default_units": "Unidades",
+    "language": "Idioma",
+    "credits": "Créditos",
+    "documentation": "Guía de uso",
+    "anouncements": "Anuncios",
+    "press_releases": "Comunicados de prensa",
+    "careers": "Carreras",
+    "support": "Soporte",
+    "contact_us": "Contáctanos",
+    "close": "Cerrar"
+  }
+}

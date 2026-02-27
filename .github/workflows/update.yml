@@ -1,0 +1,120 @@
+name: Force update from template
+
+on:
+  workflow_dispatch:
+
+env:
+  TEMPLATE_REPO: "https://github.com/SublimationApp/blanks-catalog-template.git"
+  TEMPLATE_REF: "main"
+
+permissions:
+      contents: write
+      actions: write
+      
+
+
+jobs:
+  update-from-template:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          lfs: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0 # Important for merging history
+
+
+
+      - name: Save current dist/config.json
+        id: save_config
+        run: |
+          mkdir -p /tmp/keep
+          if [ -f dist/config.json ]; then
+            cp dist/config.json /tmp/keep/config.json
+            cp *.zip /tmp/keep || true
+           
+            # ! [remote rejected] main -> main (refusing to allow a GitHub App to create or update workflow 
+            # `.github/workflows/update.yml` without `workflows` permission)
+            cp -r .github/ /tmp/keep 
+
+            echo "saved=true" >> $GITHUB_OUTPUT
+          else
+            echo "saved=false" >> $GITHUB_OUTPUT
+          fi
+
+
+      # - name: Sync with Template
+      #   run: |
+      #     # 1. Identify the template URL (Replace with your template's URL)
+      #     git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+      #     git config  user.email "github-actions[bot]"
+      #     git config  user.name "github-actions[bot]@users.noreply.github.com"
+     
+          
+      #     # 3. Add the template as a remote called 'upstream'
+      #     git remote add upstream $TEMPLATE_REPO
+      #     git fetch upstream
+          
+      #     # 4. Merge changes. 
+      #     # Use --allow-unrelated-histories because templates start fresh.
+      #     # 'recursive -X theirs' favors the template's version if there's a conflict.
+      #     git merge upstream/main --allow-unrelated-histories -X theirs --commit -m "chore: sync with template"
+          
+      #     # 5. Push the changes back to your repo
+      #     git push origin main
+
+      - name: Fetch upstream template
+        run: |
+          git clone --depth 1 --branch "$TEMPLATE_REF" "$TEMPLATE_REPO" /tmp/template
+          rm -rf /tmp/template/.git 
+          rm -rf /tmp/template/.github # permisions needed
+          rm   /tmp/template/*.zip || true
+
+
+      - name: Replace repository contents with template
+        run: |
+          # Clean working tree (remove all tracked files)
+          git rm -r --cached . || true
+          # Remove all files except .git to fully replace
+          find . -maxdepth 1 ! -name . -a ! -name .git -exec rm -rf {} +
+          # Copy template contents into repo root
+          
+          cp -a /tmp/template/. .
+          cp -a /tmp/keep/.github .
+          cp -f /tmp/keep/config.json dist/config.json
+          cp -a /tmp/keep/*.zip . || true
+
+
+
+
+
+      # - name: Commit and push forced update
+      #   run: |
+      #     git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+      #     git config user.name "github-actions[bot]"
+      #     git config user.email "github-actions[bot]@users.noreply.github.com"
+      #     # git checkout --orphan new-branch
+      #     git add -A
+      #     git commit -m "Initial commit"
+      #     # git branch -D main
+      #     # git branch -m main
+      #     git push -f origin main
+
+
+
+      - name: Commit, Push, Reset history
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan new-branch
+          git add -A
+          git commit -m "Template updated"
+          git branch -D main
+          git branch -m main
+          git push -f origin main
+
+
+      # some action update

@@ -1,0 +1,15 @@
+{
+    "measurement_units" : {
+        "english" : "Units",
+        "hebrew" : "יחידות מדידה",
+        "arabic" : "وحدات",
+        "french" : "Unités",
+        "spanish" : "Unidades",
+        "german" : "Einheiten",
+        "ukrainian" : "Одиниці",
+        "russian" : "Единицы",
+        "italian" : "Unità",
+        "japanese" : "単位",
+        "chinese" : "单位"
+    }
+}

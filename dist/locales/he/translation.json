@@ -1,0 +1,137 @@
+{
+  "common": {
+    "appTitle": "האפליקציה שלי",
+    "language": "שפה",
+    "category": "קטגוריה",
+    "logout": "התנתק",
+    "shape" : "תבנית",
+    "size": "מידה",
+    "print_size" : "שטח הדפסה",
+    "3dwidget" : "תלת מימד",
+    "none" : "אין",
+    "temperature" : "טמפרטורה",
+    "heating_time" :"זמן כבישה",
+    "degrees": "מעלות",
+    "seconds" : "שניות",
+    "width" :"רוחב",
+    "height" : "גובה",
+    "zoom" : "זום"
+     
+  },
+  "topbar": {
+    "greeting": "שלום, {{name}}"
+  },
+  "auth": {
+    "login": "כניסה",
+    "register": "הרשמה"
+  },
+  "crop": {
+    "square": "מרובע",
+    "rectangle": "מלבן",
+    "circle": "עגול",
+    "ellipse": "אליפסה",
+    "round_corners": "פינות מעוגלות",
+    "cone": "קונוס",
+    "path": "שרירותי"
+  },
+  "drawer": {
+    "default_units": "יחידות מדידה",
+    "language": "שפה",
+    "credits": "קרדיט",
+    "documentation": "הוראות שימוש",
+    "anouncements": "פרסומים",
+    "press_releases": "הודעות לעיתונות",
+    "careers": "משרות",
+    "support": "תמיכה",
+    "contact_us": "צור קשר",
+    "close": "סגור"
+  },
+  "units":{
+    "millimetre" :"מילימטר",
+    "inch" : "אינץ'" ,
+    "deg" : "מעלות",
+    "rad" : "רדיאן",
+    "mm" : "ממ",
+    "in" : "אינץ'"
+  },
+
+  "shapes" :{
+    "square": "מרובע",
+    "rect": "מלבן",
+    "circle": "עגול",
+    "ellipse": "אליפסה",
+    "round-corners-2": "פינות מעוגלות",
+    "cone": "קונוס",
+    "path": "שרירותי"
+  },
+  "3dwidgets":{
+      "box" : "תיבה",
+      "cylinder" : "גליל",
+      "ellipse" : "אליפסה",
+      "cone" : "קונוס",
+      "rounded_rectangle" : "מלבן מעוגל",
+      "path" : "שרירותי",
+      "11oz" : "11 Oz"
+
+  },
+  "three_widgets":{
+    "three_empty" : "אין",
+    "three_box" : "תיבה",
+    "three_cylinder" : "גליל",
+    "three_ellipse" : "אליפסה",
+    "three_cone" : "קונוס",
+    "three_roundcorners2" : "פינות מעוגלות",
+    "three_path" : "שרירותי",
+    "three_11oz" : "11 Oz"
+
+  },
+  "components" :{
+    "shape_select_dropdown" : {
+      "select_shape" : "תבניות",
+      "basic": "בסיסיים",
+      "advanced" : "מתקדמים"
+    },
+    "new_image_dropdown" : {
+      "new_image" : "תמונה חדשה",
+      "from_pc" : "מחשב הזה",
+      "from_url" : "קישור",
+      "from_medialib" : "ספריית מדיה"
+    }
+  },
+  "tab_widgets" :{
+    "headers" :{
+      "path_widget" : "שרירותי",
+      "crop_widget" : "חיתוך",
+      "print_widget" : "הדפסה",
+      "export_widget" : "שמירה",
+      "3d_widget" : "תצוגת 3D",
+      "preview_image" : "תמונת קטלוג",
+      "cone_widget" : "מחשבון קונים"
+    }
+  },
+  "cone_widget" :{
+    "top_diameter" : "דיאמטר עליון",
+    "bottom_diameter" : "דיאמטר תחתון",
+    "height" : "גובה",
+    "segment_angle" : "זווית מקטע",
+    "common_props" : "כללי",
+    "cone_props" : "קונוס",
+    "segment_props" : "מקטע",
+    "bounds" : "מתחם",
+    "top_arc" : "קשת עליונה",
+    "bottom_arc" : "קשט תחתונה",
+    "bounds_gap" : "מתחם)מקטע)",
+    "convert": "המרה לקוני",
+    "converting" : "ממיר"
+
+  },
+    "crop_widget":{
+    "info_table" :{
+      "image_size"  :"תמונת מקור",
+      "crop_size"  :"חיתוך",
+      "print_size"  :"מידות להדפסה",
+      "file_size" : "משקל"
+    },
+    "save_crop": "שמירה"
+  }
+}

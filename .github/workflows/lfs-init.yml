@@ -1,0 +1,69 @@
+name: LFS init
+on:
+  # push:
+  #   branches:
+  #     - main
+  workflow_dispatch:
+
+env:
+  MAIN_TEMPLATE: "SublimationApp/blanks-catalog-template"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lfs-init
+  cancel-in-progress: true
+ 
+jobs:
+  check-lfs:
+    
+    runs-on: ubuntu-latest
+    outputs:
+      lfs_configured: ${{ steps.check.outputs.lfs_configured }}
+
+    steps:
+    - uses: actions/checkout@v6
+      if: github.repository != env.MAIN_TEMPLATE
+
+    - name: Check if LFS is configured
+      id: check
+      if: github.repository != env.MAIN_TEMPLATE
+      run: |
+        # Look for 'filter=lfs' in .gitattributes
+        if [ -f .gitattributes ] && grep -q "filter=lfs" .gitattributes; then
+          echo "lfs_configured=true" >> $GITHUB_OUTPUT
+        else
+          echo "lfs_configured=false" >> $GITHUB_OUTPUT
+        fi
+
+  enable-lfs:
+    runs-on: ubuntu-latest
+    needs: [check-lfs]
+    if: needs.check-lfs.outputs.lfs_configured == 'false'
+
+    steps:
+    - uses: actions/checkout@v6
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }} # Ensure write permissions
+    
+    - name: Configure Git
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+
+    # 3. 
+    # - name: Initialize and Track
+    #   run: |
+    #     git lfs install
+    #     git lfs track "*.zip"
+    #     git add .gitattributes                # needed when `git lfs track` is used
+    #     git commit -m "LFS init implemented"  # needed when `git lfs track` is used
+    #     git push origin main
+
+        # 3. Fetch and merge template
+    - name: Initialize with existing zip files
+      run: |
+        git lfs install
+        git lfs migrate import --include="*.zip" --everything
+        git push origin main --force

@@ -1,0 +1,39 @@
+{
+  "common": {
+    "appTitle": "Meine App",
+    "language": "Sprache",
+    "logout": "Abmelden"
+  },
+  "topbar": {
+    "greeting": "Hallo, {{name}}"
+  },
+  "auth": {
+    "login": "Anmelden",
+    "register": "Registrieren"
+  },
+  "crop": {
+    "square": "Quadrat",
+    "rectangle": "Rechteck",
+    "circle": "Kreis",
+    "ellipse": "Ellipse",
+    "round_corners": "Abgerundete Ecken",
+    "cone": "Kegel",
+    "path": "Benutzerdefinierte Form"
+  },
+  "drawer": {
+    "default_units": "Einheiten",
+    "language": "Sprache",
+    "credits": "Credits",
+    "documentation": "Bedienungsanleitung",
+    "anouncements": "Ankündigungen",
+    "press_releases": "Presse-Mitteilungen",
+    "careers": "Karriere",
+    "support": "Support",
+    "contact_us": "Kontaktieren Sie uns",
+    "close": "Schließen"
+  },
+  "units":{
+    "millimetre" :"Millimeter",
+    "inch" : "Inch" 
+  }
+}

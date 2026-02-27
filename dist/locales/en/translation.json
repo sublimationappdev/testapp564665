@@ -1,0 +1,154 @@
+{
+  "common": {
+    "appTitle": "My App",
+    "language": "Language",
+    "category": "Category",
+    "logout": "Logout",
+    "shape" : "Shape",
+    "size": "Size",
+    "print_size" : "Print size",
+    "3dwidget" :  "3d widget",
+    "none" : "None",
+    "temperature" : "Temperature",
+    "heating_time" :"Heating Time",
+    "degrees": "Degrees",
+    "seconds" : "Seconds",
+    "width" :"Width",
+    "height" : "Height",
+    "zoom" : "Zoom"
+  },
+
+  "topbar": {
+    "greeting": "Hello, {{name}}"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register"
+  },
+  "crop": {
+    "square": "Square",
+    "rectangle": "Rectangle",
+    "circle": "Circle",
+    "ellipse": "Ellipse",
+    "round_corners": "Round Corners",
+    "cone" : "Cone",
+    "path": "Path"
+  },
+  "drawer" :{
+    "default_units"  : "Default units",
+    "language"  : "Language",
+    "credits" : "Credits",
+    "documentation" : "Documentation",
+    "anouncements" : "Announcements",
+    "press_releases" : "Press Releases",
+    "careers" : "Careers",
+    "support" : "Support",
+    "contact_us" : "Contact Us",
+    "close" : "Close"
+  },
+  "units":{
+    "millimetre" :"Millimetre",
+    "inch" : "Inch" ,
+    "deg" : "deg",
+    "rad" : "rad",
+    "mm" : "mm",
+    "in" : "in"
+
+  },
+  "shapes" :{
+    "circle"  : "Circle",
+    "square"  : "Square",
+    "rect" : "Rectangle",
+    "round-corners-2" : "Round corners",
+    "cone" : "Cone",
+    "ellipse" : "Ellipse",
+    "path" : "Path"
+  },
+  "3dwidgets":{
+    "box" : "Box",
+    "cylinder" : "Cylinder",
+    "ellipse" : "Ellipse",
+    "cone" : "Cone",
+    "rounded_rectangle" : "Rounded rectangle",
+    "path" : "Path",
+    "11oz" : "11 Oz"
+
+  },
+
+  "three_widgets":{
+    "three_empty" : "None",
+    "three_box" : "Box",
+    "three_cylinder" : "Cylinder",
+    "three_ellipse" : "Ellipse",
+    "three_cone" : "Cone",
+    "three_roundcorners2" : "Rounded rectangle",
+    "three_path" : "Path",
+    "three_11oz" : "11 Oz"
+
+  },
+  "components" :{
+    "shape_select_dropdown" : {
+      "select_shape" : "Select shape",
+      "basic": "Basic",
+      "advanced" : "Advanced"
+    },
+    "new_image_dropdown" : {
+      "new_image" : "New Image",
+      "from_pc" : "From PC",
+      "from_url" : "Add URL",
+      "from_medialib" : "Media Library"
+    }
+  },
+  "tab_widgets" :{
+    "headers" :{
+      "path_widget" : "Path Viewer",
+      "crop_widget" : "Crop Widget",
+      "print_widget" : "Print Preview",
+      "export_widget" : "Export",
+      "3d_widget" : "3D View",
+      "preview_image" : "Preview",
+      "cone_widget" : "Cone Calculator"
+    }
+    
+  },
+
+  "cone_widget" :{
+    "top_diameter" : "Top Diameter",
+    "bottom_diameter" : "Bottom Diameter",
+    "height" : "Height",
+    "segment_angle" : "Segment Angle",
+    "common_props" : "Common props",
+    "cone_props" : "Cone props",
+    "segment_props" : "Segment props",
+    "bounds" : "Bounds",
+    "top_arc" : "Top Arc",
+    "bottom_arc" : "Bottom Arc",
+    "bounds_gap" : "Bounds (gap)",
+    "convert": "Convert",
+    "converting" : "Converting"
+
+  },
+  "crop_widget":{
+    "info_table" :{
+      "image_size"  :"Image",
+      "crop_size"  :"Crop",
+      "print_size"  :"Print",
+      "file_size" : "size"
+    },
+    "save_crop": "Save crop"
+  },
+
+  "views" : {
+      "catalog":{
+        "templates" :{
+          "list" : {
+            
+          },
+          "details" : {
+            
+          }
+        }
+    }
+  }
+ 
+}

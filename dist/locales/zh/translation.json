@@ -1,0 +1,35 @@
+{
+  "common": {
+    "appTitle": "我的应用",
+    "language": "语言",
+    "logout": "退出登录"
+  },
+  "topbar": {
+    "greeting": "你好，{{name}}"
+  },
+  "auth": {
+    "login": "登录",
+    "register": "注册"
+  },
+  "crop": {
+    "square": "正方形",
+    "rectangle": "矩形",
+    "circle": "圆形",
+    "ellipse": "椭圆",
+    "round_corners": "圆角",
+    "cone": "圆锥",
+    "path": "自定义形状"
+  },
+  "drawer": {
+    "default_units": "单位",
+    "language": "语言",
+    "credits": "鸣谢",
+    "documentation": "使用指南",
+    "anouncements": "公告",
+    "press_releases": "新闻发布",
+    "careers": "职业机会",
+    "support": "技术支持",
+    "contact_us": "联系我们",
+    "close": "关闭"
+  }
+}

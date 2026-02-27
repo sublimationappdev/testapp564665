@@ -1,0 +1,56 @@
+{
+    "units" : {
+        "millimeter":{
+            "english" : "Millimetre",
+            "hebrew" :  "מילימטר",
+            "arabic" : "مليمتر",
+            "french" : "Millimètre",
+            "spanish" : "Milímetro",
+            "german" : "Millimeter",
+            "ukrainian" : "Міліметр",
+            "russian" : "Миллиметр",
+            "italian" : "Millimetro",
+            "japanese" : "ミリメートル",
+            "chinese" : "毫米"
+        },
+        "inch" :{
+            "english" : "Inch",
+            "hebrew" : "אינץ'",
+            "arabic" : "بوصة",
+            "french" : "Pouce",
+            "spanish" : "Pulgada",
+            "german" : "Zoll",
+            "ukrainian" : "Дюйм",
+            "russian" : "Дюйм",
+            "italian" : "Pollice",
+            "japanese" : "インチ",
+            "chinese" : "英寸"
+        },
+        "mm":{
+            "english" : "mm",
+            "hebrew" :  "מ\"מ",
+            "arabic" : "مم",
+            "french" : "mm",
+            "spanish" : "mm",
+            "german" : "mm",
+            "ukrainian" : "мм",
+            "russian" : "мм",
+            "italian" : "mm",
+            "japanese" : "mm",
+            "chinese" : "毫米"
+        },
+        "in" :{
+            "english" : "in",
+            "hebrew" : "\"",
+            "arabic" : "بوصة",
+            "french" : "\"",
+            "spanish" : "\"",
+            "german" : "\"",
+            "ukrainian" : "дюйм",
+            "russian" : "дюйм",
+            "italian" : "\"",
+            "japanese" : "インチ",
+            "chinese" : "英寸"
+        }
+    }
+}

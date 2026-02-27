@@ -1,0 +1,35 @@
+{
+  "common": {
+    "appTitle": "Мое Приложение",
+    "language": "Язык",
+    "logout": "Выход"
+  },
+  "topbar": {
+    "greeting": "Привет, {{name}}"
+  },
+  "auth": {
+    "login": "Вход",
+    "register": "Регистрация"
+  },
+  "crop": {
+    "square": "Квадрат",
+    "rectangle": "Прямоугольник",
+    "circle": "Круг",
+    "ellipse": "Эллипс",
+    "round_corners": "Скругленные углы",
+    "cone": "Конус",
+    "path": "Произвольная форма"
+  },
+  "drawer": {
+    "default_units": "Единицы измерения",
+    "language": "Язык",
+    "credits": "Благодарности",
+    "documentation": "Инструкция по использованию",
+    "anouncements": "Объявления",
+    "press_releases": "Пресс-релизы",
+    "careers": "Карьера",
+    "support": "Поддержка",
+    "contact_us": "Связаться с нами",
+    "close": "Закрыть"
+  }
+}
